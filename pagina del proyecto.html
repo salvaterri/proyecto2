@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Foro de Tareas - Brinlai</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background-color: #004080;
+      color: white;
+      padding: 20px 40px;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: white;
+      margin-right: 15px;
+      text-decoration: none;
+    }
+
+    .container {
+      padding: 20px 40px;
+    }
+
+    .post {
+      background-color: white;
+      border-left: 5px solid #004080;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 4px;
+    }
+
+    .post h3 {
+      margin-top: 0;
+    }
+
+    .post .meta {
+      font-size: 0.9em;
+      color: #666;
+    }
+
+    .reply {
+      margin-left: 40px;
+      margin-top: 10px;
+      padding: 10px;
+      background-color: #eaeaea;
+      border-left: 3px solid #aaa;
+    }
+
+    form {
+      background-color: white;
+      padding: 20px;
+      border-radius: 4px;
+      max-width: 600px;
+    }
+
+    input, textarea, select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    button {
+      background-color: #004080;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0066cc;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Foro de Tareas Escolares</h1>
+    <nav>
+      <a href="#login">Iniciar sesión</a>
+      <a href="#register">Registrarse</a>
+      <a href="#new">Nueva tarea</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2>Tareas recientes</h2>
+
+    <div class="post">
+      <h3>¿Cómo resolver ecuaciones de segundo grado?</h3>
+      <p>Necesito ayuda con la tarea de matemáticas. No entiendo cómo factorizar.</p>
+      <div class="meta">Publicado por Ana - 2º ESO - Hace 2 horas</div>
+      <div class="reply">
+        <strong>Profesor Luis:</strong> Te recomiendo usar la fórmula general. ¿Sabes cuál es?
+      </div>
+    </div>
+
+    <div class="post">
+      <h3>Resumen del libro "La ciudad de las bestias"</h3>
+      <p>Alguien tiene un resumen corto para la tarea de literatura?</p>
+      <div class="meta">Publicado por Carlos - 3º ESO - Hace 5 horas</div>
+    </div>
+
+    <h3>Publicar nueva tarea</h3>
+    <form id="new">
+      <input type="text" placeholder="Título de la tarea" required />
+      <select required>
+        <option value="">Selecciona materia</option>
+        <option>Matemáticas</option>
+        <option>Lengua</option>
+        <option>Ciencias</option>
+        <option>Historia</option>
+        <option>Otro</option>
+      </select>
+      <textarea placeholder="Describe tu duda o tarea..." required></textarea>
+      <button type="submit">Publicar</button>
+    </form>
+  </div>
+
+</body>
+</html
